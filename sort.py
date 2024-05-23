@@ -4,7 +4,7 @@ from algorithms.sort import bubble_sort, quick_sort
 import random
 
 #Algorytm 1. – własna implementacja sortowania bąbelkowego
-def bubble_sort(lista):
+def bubble_sort_r(lista):
     n = len(lista)
     for i in range(n):
         for j in range(0, n-i-1):
@@ -13,7 +13,7 @@ def bubble_sort(lista):
 # Przykład użycia:
 listunia = [1234, 50, 300, 15, 6, 64, 34, 25, 12, 22, 11, 90]
 print("Lista przed sortowaniem:", listunia)
-bubble_sort(listunia)
+bubble_sort_r(listunia)
 print("Lista po sortowaniu:", listunia)
 print()
 
